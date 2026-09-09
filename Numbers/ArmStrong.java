@@ -3,7 +3,6 @@ public class ArmStrong {
     static int arm(int n){
         int temp=n;
         int original=n;
-        int digit=0;
         int sum=0;
         int count=0;
 
@@ -13,7 +12,7 @@ public class ArmStrong {
         }
 
         while(n>0){
-            digit=n%10;
+            int digit=n%10;
             sum=sum+(int)Math.pow(digit,count);
             n=n/10;
         }
